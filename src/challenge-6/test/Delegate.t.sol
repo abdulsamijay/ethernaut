@@ -14,6 +14,7 @@ contract ContractTest is Test {
     }
 
     function test_challenge_6() public {
+        console.log("Challaenge #6");
         console.log("owner before", delegate.owner());
         deal(address(1337), 1 ether);
         vm.startPrank(address(1337));
