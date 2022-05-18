@@ -2,13 +2,14 @@
 pragma solidity ^0.6.0;
 
 import "forge-std/Test.sol";
-
 import "../Fallback.sol";
 
 contract ContractTest is Test {
     Fallback fall;
 
     function test_challenge_1() public {
+        console.log("Challenge #1");
+
         fall = new Fallback();
         console.log("The owner of the contract", fall.owner());
 
