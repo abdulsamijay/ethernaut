@@ -3,6 +3,9 @@ src = 'src'
 out = 'out'
 libs = ['lib']
 
+optimizer = false
+
+
 remappings = [
     "@openzeppelin/=lib/openzeppelin-contracts/"
 ]
