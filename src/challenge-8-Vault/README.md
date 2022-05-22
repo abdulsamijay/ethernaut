@@ -25,5 +25,5 @@ console.log("The password is :", pass);
 1. Run Exploit!
 
 ```sh
-cd .. && forge test -vv -m test_challenge_8
+forge test -vv -m test_challenge_8
 ```

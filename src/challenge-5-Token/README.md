@@ -11,5 +11,5 @@ In this challenge the user is provided with a contract called [`Token.sol`](./To
 1. Run Exploit!
 
 ```sh
-cd .. && forge test -vv -m test_challenge_5
+forge test -vv -m test_challenge_5
 ```

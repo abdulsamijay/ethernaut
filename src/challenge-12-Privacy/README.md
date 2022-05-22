@@ -26,5 +26,5 @@ console.log("The key is :", key.slice(0, 34));
 1. Run Exploit!
 
 ```sh
-cd .. && forge test -vv -m test_challenge_11
+forge test -vv -m test_challenge_11
 ```

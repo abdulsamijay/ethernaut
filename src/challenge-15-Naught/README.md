@@ -15,5 +15,5 @@ This challenge requires user to be familiar with the following concepts.
 4. Run Exploit!
 
 ```sh
-cd .. && forge test -vv -m test_challenge_15
+forge test -vv -m test_challenge_15
 ```

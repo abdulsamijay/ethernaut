@@ -9,5 +9,5 @@ In this challenge the user is provided with a contract called [`Dex.sol`](./Dex.
 
 1. Run Exploit!
 ```sh
-cd .. && forge test -vv -m test_challenge_21
+forge test -vv -m test_challenge_21
 ```

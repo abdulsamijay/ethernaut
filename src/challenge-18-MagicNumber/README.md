@@ -42,7 +42,7 @@ Final bytecode to deploy `0x602a60805160206000f3600a600a600af3600a6000f3`
 
 1. Run Exploit!
 ```sh
-cd .. && forge test -vv -m test_challenge_18
+forge test -vv -m test_challenge_18
 ```
 
 ### OPCODE Simulation

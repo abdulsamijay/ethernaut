@@ -20,5 +20,5 @@ However, I have solved the [`Fallback`](./Fallback.sol) using a contract that ca
 1. Run Exploit!
 
 ```sh
-cd .. && forge test -vv -m test_challenge_2
+forge test -vv -m test_challenge_2
 ```

@@ -16,6 +16,6 @@ However, I have solved the [`Challenge-0`](./Challenge0.sol) using a contract th
 1. Run Exploit!
 
 ```sh
-cd .. && forge test -vv -m test_challenge_0
+forge test -vv -m test_challenge_0
 ```
 

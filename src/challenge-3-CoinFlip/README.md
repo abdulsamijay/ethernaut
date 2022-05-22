@@ -18,5 +18,5 @@ However, I have solved this challenge [`Challenge-3`](./src/CoinFlip.sol) using 
 1. Run Exploit!
 
 ```sh
-cd .. && forge test -vv -m test_challenge_3
+forge test -vv -m test_challenge_3
 ```

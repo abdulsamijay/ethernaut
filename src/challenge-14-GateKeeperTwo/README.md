@@ -23,5 +23,5 @@ bytes8 _gateKey = bytes8(
 1. Run Exploit!
 
 ```sh
-cd .. && forge test -vv -m test_challenge_14
+forge test -vv -m test_challenge_14
 ```

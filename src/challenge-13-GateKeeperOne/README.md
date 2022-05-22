@@ -33,7 +33,7 @@ The function which sets `entrant` value to `tx.origin` has 3 modifiers each with
 6. Run Exploit!
 
 ```sh
-cd .. && forge test -vv -m test_challenge_13
+forge test -vv -m test_challenge_13
 ```
 
 ### Other resource related to this challenge!

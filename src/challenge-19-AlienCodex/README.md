@@ -19,7 +19,7 @@ bytes32 storageValue = 0x000000000000000000000001X;
 
 1. Run Exploit!
 ```sh
-cd .. && forge test -vv -m test_challenge_19
+forge test -vv -m test_challenge_19
 ```
 
 ### Additional Resources
