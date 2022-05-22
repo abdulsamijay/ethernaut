@@ -1,6 +1,6 @@
 ## Ethernaut Challenge 13
 
-In this challenge the user is provided with a contract called [`Privacy.sol`](./Privacy.sol). The goal of this challenge is to set the `entrant` variable to `tx.origin`.
+In this challenge the user is provided with a contract called [`GatekeeperOne.sol`](./GatekeeperOne.sol). The goal of this challenge is to set the `entrant` variable to `tx.origin`.
 
 This challenge requires user to be familiar with the following concepts.
 - Difference between `tx.origin` & `msg.sender`.
@@ -9,7 +9,7 @@ This challenge requires user to be familiar with the following concepts.
 
 ### Solution
 The function which sets `entrant` value to `tx.origin` has 3 modifiers each with its own conditions.
-1. `gateOne()` simply checks if the `msg.sender` & `tx.origin` is not same. It is similar to how we solved [Telephone.sol](../challenge-4-Telephone/Telephone.sol).
+1. `gateOne()` simply checks if the `msg.sender` & `tx.origin` is not same. It is similar to how we solved [Telephone.sol](../challenge-4-Telephone/Telephone.sol). It can be bypassed by calling that function from a smart contract.
 2. `gateTwo()` checks if amount of gas left for execution should be divisible by `8191`.
 3. `gateThree()` requires key that is of bytes8 which check for 3 conditions.
     1. `uint32(uint64(_gateKey)) == uint16(uint64(_gateKey))`.<br> 
@@ -27,6 +27,7 @@ The function which sets `entrant` value to `tx.origin` has 3 modifiers each with
     3. `uint32(uint64(_gateKey)) == uint16(tx.origin)` <br>
     Means last 2 bytes must equal to last 2 bytes `tx.origin's` address.
 4. To sum it up, the we need `bytes8` such that the following holds `0x 1000 0000 0000 <2 bytes of tx.origin>`.
+5. Now we need to specify gas while calling te function this can be bruteforced on local enviroment.
 
 1. Run Exploit!
 

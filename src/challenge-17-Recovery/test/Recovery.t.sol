@@ -31,6 +31,7 @@ contract ContractTest is Test {
 
         // Assume tokens lost
         deal(address(predict), 0.001 ether);
+        
         console.log("Balance of predicted address   ", address(predict).balance);
         s = SimpleToken(payable(predict));
         s.destroy(payable(address(1337)));
