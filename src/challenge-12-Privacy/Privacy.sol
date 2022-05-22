@@ -18,14 +18,6 @@ contract Privacy {
         locked = false;
     }
 
-    function arrLocation(
-        uint256 slot,
-        uint256 index,
-        uint256 elementSize
-    ) public pure returns (uint256) {
-        return uint256(keccak256(abi.encodePacked(slot))) + (index * elementSize);
-    }
-
     function getValueAtSlot(uint256 slot) public view returns (bytes32 pass) {
         assembly {
             pass := sload(slot)

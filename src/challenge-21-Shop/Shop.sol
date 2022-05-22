@@ -20,7 +20,6 @@ contract Shop {
 }
 
 contract BuyerContract {
-    uint256 counter;
     Shop shop;
 
     constructor(address _shop) public {

