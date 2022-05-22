@@ -45,5 +45,9 @@ Final bytecode to deploy `0x602a60805160206000f3600a600a600af3600a6000f3`
 cd .. && forge test -vv -m test_challenge_18
 ```
 
+### OPCODE Simulation
+![EVM OPCODE simulation](./assets/s1.png)
+![EVM OPCODE execution](./assets/s2.png)
+
 ### Other resource related to this challenge
 - [A detailed explanation of internals of solidity compiler & this challenge.](https://medium.com/coinmonks/ethernaut-lvl-19-magicnumber-walkthrough-how-to-deploy-contracts-using-raw-assembly-opcodes-c50edb0f71a2)
