@@ -17,6 +17,8 @@ contract ContractTest is Test {
     }
 
     function test_challenge_5() public {
+        console.log("Challenge #5");
+
         console.log("Initial balance of 0x1337", t.balanceOf(address(1337)));
         vm.startPrank(address(te));
         te.exploit(address(1337), 10000);

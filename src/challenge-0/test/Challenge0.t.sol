@@ -8,6 +8,7 @@ contract ContractTest is Test {
     Challenge0 c0;
 
     function test_Challenge_0() public {
+        console.log("Challenge #0");
         c0 = new Challenge0("ethernaut0");
 
         // Wrong pass.

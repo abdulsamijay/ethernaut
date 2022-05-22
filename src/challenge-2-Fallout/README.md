@@ -1,4 +1,4 @@
-## Ethernaut Challenge 2 - using foundry
+## Ethernaut Challenge 2
 
 In this challenge the user is provided with a contract called [`Fallout`](./Fallout.sol). The goal of this challenge is to become the onwer of the contract & drain all the funds (Eth).
 
@@ -15,22 +15,10 @@ This challenge requires user to be familiar with the following concepts.
 - If we look closely, there is a function called `Fallout()` which accepts ether & allows anybody to become onwer by sending Eth to that function.
 - The user becomes the new owner of the contract.
 
-However, I have solved this challenge [`Challenge-2`](./src/Challenge2.sol) using a contract that can be found in [`test/Challenge2.sol`](./test/Challenge2.t.sol).
+However, I have solved the [`Fallback`](./Fallback.sol) using a contract that can be found in [`test/Challenge2.sol`](./test/Fallout.t.sol).
 
-1. `Cd` into challenge-2/
-
-```sh
-    cd challenge-2/
-```
-
-2. Run forge build
+1. Run Exploit!
 
 ```sh
-    forge build
-```
-
-3. Exploit!
-
-```sh
-    forge test -vv -m test_challenge_2
+cd .. && forge test -vv -m test_challenge_2
 ```

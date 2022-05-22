@@ -1,4 +1,4 @@
-## Ethernaut Challenge 1 - using foundry
+## Ethernaut Challenge 1
 
 In this challenge the user is provided with a contract called [`Fallback`](./Fallback.sol). The goal of this challenge is to become the onwer of the contract & drain all the funds (Eth).
 
@@ -15,18 +15,10 @@ This challenge requires user to be familiar with the following concepts.
 - So, First we call `contribute()` with `Eth > 0` (i.e 0.0009 Eth) this will increase our value from 0 to some positive number. Then we send `Eth > 0` (i.e 0.1 Eth) to the contract where our conditions fulfill & now we are the `owner` of the contract.
 - Next, we call `withdraw()` & receive all the funds to ourself. (0x1337 in this case).
 
-However, I have solved this challenge [`Challenge-1`](./src/Challenge1.sol) using a contract that can be found in [`test/Challenge1.sol`](./test/Challenge1.t.sol).
+However, I have solved [`Fallback`](./src/Fallback.sol) using a contract that can be found in [`test/Challenge1.sol`](./test/Fallback.t.sol).
 
-1. `Cd` into challenge-1/
+1. Run Exploit!
 
 ```sh
-    cd challenge-1/
-```
-2. Run forge build
-```sh
-    forge build
-```
-3. Exploit!
-```sh
-    forge test -vv -m test_challenge_1
+cd .. && forge test -vv -m test_challenge_1
 ```

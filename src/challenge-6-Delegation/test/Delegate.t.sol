@@ -19,7 +19,8 @@ contract ContractTest is Test {
         deal(address(1337), 1 ether);
         vm.startPrank(address(1337));
         address(delegation).call{value: 0.1 ether}(
-            abi.encodeWithSignature("0xdd365b8b")
+            // bytes4(keccack256("pwn()"))
+            abi.encodeWithSignature("0xdd365b8b") 
         );
         console.log("owner after", delegate.owner());
         vm.stopPrank();

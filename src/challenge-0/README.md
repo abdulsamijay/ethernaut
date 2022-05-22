@@ -1,4 +1,4 @@
-## Ethernaut Challenge 0 - using foundry
+## Ethernaut Challenge 0
 
 In this challenge the user is provided with a contract instance upon calling the `Get Instance` button on the page. The challenge is to retrieve the `password` hidden in the contract & call `authenticate()` with a password. If the user enters correct passord the isCleared flag becomes true & level is assumed to be cleared.
 
@@ -11,19 +11,11 @@ The user needs to navigate through the contract instance by opening up chrome de
 
 ### I have solved it a bit differently!
 
-However, I have solved this challenge [`Challenge-0`](./src/Challenge0.sol) using a contract that can be found in [`test/Challenge0.sol`](./test/Challenge0.t.sol).
+However, I have solved the [`Challenge-0`](./Challenge0.sol) using a contract that can be found in [`test/Challenge0.sol`](./test/Challenge0.t.sol).
 
-1. `Cd` into challenge-0/
-
-```sh
-    cd challenge-0/
-```
-2. Run forge build
-```sh
-    forge build
-```
-3. Exploit!
+1. Run Exploit!
 
 ```sh
-    forge test -vv -m test_Challenge_0
+cd .. && forge test -vv -m test_challenge_0
 ```
+

@@ -1,4 +1,4 @@
-## Ethernaut Challenge 3 - using foundry
+## Ethernaut Challenge 3
 
 In this challenge the user is provided with a contract called [`Coinflip.sol`](./CoinFlip.sol). The goal of this challenge is win 10 times consecutively by calling the `flip()` function of the contract.
 
@@ -15,20 +15,8 @@ This challenge requires user to be familiar with the following concepts..
 
 However, I have solved this challenge [`Challenge-3`](./src/CoinFlip.sol) using a contract that can be found in [`test/CoinFlip.t.sol`](./test/CoinFlip.t.sol).
 
-1. `Cd` into challenge-3/
+1. Run Exploit!
 
 ```sh
-    cd challenge-3/
-```
-
-2. Run forge build
-
-```sh
-    forge build
-```
-
-3. Exploit!
-
-```sh
-    forge test -vv -m test_challenge_3
+cd .. && forge test -vv -m test_challenge_3
 ```

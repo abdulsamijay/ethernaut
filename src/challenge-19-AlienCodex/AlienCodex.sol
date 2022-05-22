@@ -30,10 +30,6 @@ contract AlienCodex is Ownable {
         codex.length--;
     }
 
-    function len() public returns (uint256) {
-        return codex.length;
-    }
-
     function revise(uint256 i, bytes32 _content) public contacted {
         codex[i] = _content;
     }
