@@ -30,7 +30,7 @@ contract GatekeeperOne {
         /**
          * Group =>   1    2    3    4
          * Bytes =>  0000 0000 0000 0000
-         * Means value of last 8 {`3rd & 4th bytes group`} bytes when converted to 32 & 64 must not equal be same => YYYY YYYY XXXX XXXX != XXXX XXXX XXXX XXXX
+         * Means value of last 8 {`3rd & 4th bytes group`} bytes when converted to 32 & 64 must not equal be same => 0000 0000 XXXX XXXX != 0000 0000 0000 XXXX
          */
         require(
             uint32(uint64(_gateKey)) != uint64(_gateKey),
