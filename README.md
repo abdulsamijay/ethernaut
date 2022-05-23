@@ -8,9 +8,9 @@ This repository uses [`Foundry`](https://book.getfoundry.sh/) to run the contrac
 ```sh
 git clone https://github.com/abdulsamijay/ethernaut.git
 ```
-2. Build the repository.
+2. Build the repository & install.
 ```sh
-forge build
+forge install && forge build
 ```
 3. Run all challenges
 ```sh
