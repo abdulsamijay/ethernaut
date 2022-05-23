@@ -23,8 +23,9 @@ forge test -vv -m 10
 ## :tada: Solution to challenges
 The details for each challenge are in their respective folders. Click one of the links to quickly jump over!
 
-1.  [`Challenge0`](./src/challenge-0/)
-2.  [`Fallback`](./src/Challenge-1-Fallback/)
+0.  [`Challenge0`](./src/challenge-0/)
+1.  [`Fallback`](./src/Challenge-1-Fallback/)
+2.  [`Fallout`](./src/Challenge-2-Fallout/)
 3.  [`CoinFlip`](./src/challenge-3-CoinFlip/)
 4.  [`Telephone`](./src/challenge-4-Telephone/)
 5.  [`Token`](./src/challenge-5-Token/)
