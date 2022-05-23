@@ -4,7 +4,6 @@ out = 'out'
 libs = ['lib']
 
 optimizer = false
-FOUNDRY_IGNORED_ERROR_CODES=[9302,2072,5667,2018,3628,1878]
 
 remappings = [
     "@openzeppelin/=lib/openzeppelin-contracts/"
