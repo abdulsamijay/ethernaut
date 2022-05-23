@@ -46,3 +46,8 @@ The details for each challenge are in their respective folders. Click one of the
 21. [`Shop`](./src/challenge-21-Shop/)
 22. [`Dex`](./src/challenge-22-Dex/)
 23. [`DexTwo`](./src/challenge-23-DexTwo/)
+
+### :handshake: Acknowledgements
+I would also like to give shoutout to people helping other peeps catchup by sharing content! 
+- @cmichelio for his vast writeups.
+- @0xSage for his in-depth ethernaut challenge writeups + awesome tricks along the way.
